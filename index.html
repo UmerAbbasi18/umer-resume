@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume — Umer Saleem Abbasi</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #121212;
+      --muted: #5c5f66;
+      --accent: #0ea5e9; /* cyan-500 */
+      --rule: #e5e7eb;   /* gray-200 */
+      --chip: #f1f5f9;   /* slate-100 */
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .page {
+      max-width: 952px;
+      margin: 0 auto;
+      padding: 28px 24px 64px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .name {
+      font-size: clamp(28px, 5vw, 36px);
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      line-height: 1.1;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+
+    hr.sep {
+      border: 0;
+      border-top: 1px solid var(--rule);
+      margin: 12px 0 18px;
+    }
+
+    section { margin: 18px 0 6px; }
+    h2 {
+      font-size: 16px;
+      letter-spacing: 0.12em;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+      color: #0f172a; /* slate-900 */
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .two-col { grid-template-columns: 1fr; }
+      .right { margin-top: 2px; }
+    }
+
+    .card {
+      padding: 0;
+    }
+
+    .item { margin-bottom: 14px; }
+    .item:last-child { margin-bottom: 0; }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px;
+      align-items: baseline;
+    }
+
+    .org { font-weight: 700; }
+    .role { font-weight: 700; }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .bullets { margin: 6px 0 0 0; padding-left: 18px; }
+    .bullets li { margin: 3px 0; }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .chip {
+      font-size: 13px;
+      background: var(--chip);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+
+    /* Print Styles (A4-friendly) */
+    @page { margin: 14mm; }
+    @media print {
+      body { background: #fff; }
+      a { color: inherit; text-decoration: none; }
+      .page { padding: 0; }
+      hr.sep { margin: 8px 0 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="name">UMER SALEEM ABBASI</div>
+      <div class="contact">
+        <span>📞 +92-318-5656310</span>
+        <span>✉️ <a href="mailto:umerabbaxi18@gmail.com">umerabbaxi18@gmail.com</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/umer-saleem-abbasi/" target="_blank" rel="noopener">linkedin.com/in/umer-saleem-abbasi</a></span>
+        <span>🎂 Age: 22</span>
+      </div>
+    </header>
+
+    <hr class="sep" />
+
+    <section class="two-col">
+      <div class="left card">
+        <h2>Education</h2>
+        <div class="item">
+          <div class="row">
+            <div class="org">SZABIST — Islamabad, Pakistan</div>
+            <div class="meta">CGPA: 3.14</div>
+          </div>
+          <div class="row">
+            <div>Bachelor of Software Engineering</div>
+            <div class="meta">2020–2024</div>
+          </div>
+          <div class="chips">
+            <span class="chip">C++ Programming</span>
+            <span class="chip">OOP</span>
+            <span class="chip">DS & Algorithms</span>
+            <span class="chip">Mobile App Dev</span>
+            <span class="chip">Artificial Intelligence</span>
+            <span class="chip">Cloud Computing</span>
+            <span class="chip">SDLC</span>
+            <span class="chip">Database Mgmt</span>
+            <span class="chip">Networking</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="org">IMCB I-8/3 — Islamabad, Pakistan</div>
+            <div class="meta"></div>
+          </div>
+          <div class="row">
+            <div>Intermediate Education (ICS)</div>
+            <div class="meta">2018–2020</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right card">
+        <h2>Professional Experience</h2>
+        <div class="item">
+          <div class="row">
+            <div class="org">GOMARKHO — Islamabad, Pakistan</div>
+            <div class="meta"></div>
+          </div>
+          <div class="meta" style="margin-top:2px;">Innovating business communication with tailored VoIP, software development, and intelligent automation solutions.</div>
+          <div class="row" style="margin-top:6px;">
+            <div class="role">Frontend-Focused Full Stack Developer</div>
+            <div class="meta">Jun 2024 – Aug 2024</div>
+          </div>
+          <ul class="bullets">
+            <li>Built responsive UIs in React to deliver dynamic user experiences.</li>
+            <li>Optimized server-side logic and managed infrastructure using C++.</li>
+            <li>Collaborated across teams to ship high-quality, efficient software solutions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="left card">
+        <h2>Academic Experience</h2>
+        <div class="item">
+          <div class="row">
+            <div class="org">Road Lane Line Detection in Fog — SZABIST Islamabad</div>
+            <div class="meta"></div>
+          </div>
+          <div class="row">
+            <div class="role">Lead Researcher</div>
+            <div class="meta">Sep 2023 – Jun 2024</div>
+          </div>
+          <ul class="bullets">
+            <li>Developed a computer-vision system for lane detection under foggy conditions.</li>
+            <li>Utilized YOLOv5 and CVAT.ai for dataset creation and annotation.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="org">NAVTTC Course (Ongoing)</div>
+            <div class="meta"></div>
+          </div>
+          <div>.NET + Angular/React</div>
+          <ul class="bullets">
+            <li>Currently enrolled and gaining hands‑on experience in .NET with modern front‑end frameworks.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right card">
+        <h2>Extracurricular & Volunteer</h2>
+        <div class="item">
+          <div class="row">
+            <div class="org">Qilaco.com — Quran Learning Academy</div>
+            <div class="meta"></div>
+          </div>
+          <div class="row">
+            <div class="role">Developer</div>
+            <div class="meta">Feb 2024 – Mar 2024</div>
+          </div>
+          <ul class="bullets">
+            <li>Built a user‑friendly, informative website enabling access to Quranic education resources.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="row">
+            <div class="org">Alkhidmat Foundation Pakistan — Fundraising for Palestine</div>
+            <div class="meta"></div>
+          </div>
+          <div class="row">
+            <div class="role">Volunteer</div>
+            <div class="meta">Dec 2023 – Jan 2024</div>
+          </div>
+          <ul class="bullets">
+            <li>Raised funds and awareness through brochure distribution and community outreach.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="left card">
+        <h2>Honors & Awards</h2>
+        <div class="item">
+          <div class="row">
+            <div class="org">Certification — Islamabad, Pakistan</div>
+            <div class="meta"></div>
+          </div>
+          <ul class="bullets">
+            <li>5‑Day Workshop certification on “Freelancing” organized by Learning Platform.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right card">
+        <h2>Additional</h2>
+        <div class="item">
+          <div class="row">
+            <div class="org">Technical Skills</div>
+            <div class="meta"></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Python (Data Science)</span>
+            <span class="chip">SQA</span>
+            <span class="chip">C++</span>
+            <span class="chip">Python</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">OOP</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">SDLC</span>
+            <span class="chip">UX/UI</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="org">Tools</div>
+            <div class="meta"></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Postman</span>
+            <span class="chip">Cypress</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Git</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="org">Interests</div>
+            <div class="meta"></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Software Architecture</span>
+            <span class="chip">Programming</span>
+            <span class="chip">Coding</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="org">Languages</div>
+            <div class="meta"></div>
+          </div>
+          <div class="chips">
+            <span class="chip">English</span>
+            <span class="chip">Urdu</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="org">Games</div>
+            <div class="meta"></div>
+          </div>
+          <div class="chips">
+            <span class="chip">Football</span>
+            <span class="chip">Snooker</span>
+            <span class="chip">Swimming</span>
+            <span class="chip">Cricket</span>
+            <span class="chip">Badminton</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
